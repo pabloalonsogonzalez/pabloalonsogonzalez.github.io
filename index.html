@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Aplicación compras</title>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="page-wrapper">
+    <form id="form-nueva-compra" method="POST" action="#">
+      <input type="text" name="nueva-compra" id="nueva-compra" placeholder="Introduce compra" required>
+      <input type="button" name="borrarDatos" id="borrarDatos" value="borrar datos" />
+      <input type="button" name="borrarTabla" id="borrarTabla" value="borrarTabla" />
+    </form>
+  
+    
+    <ul id="lista-compra">
+		<!-- Lista de elementos a comprar. Se rellena dinámicamente desde la función actualizarCompras -->
+	</ul>
+  </div>
+
+  <script src="js/comprarbd.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
